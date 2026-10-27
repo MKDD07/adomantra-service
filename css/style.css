@@ -6356,3 +6356,47 @@ p:not(.h1):not(.h2):not(.h3):not(.h4):not(.h5):not(.h6) {
 .multiplier-brand-banner .mbb-stat-desc { font-size: 15px; line-height: 1.5; }
 
 .multiplier-brand-banner .mbb-intro { margin: 0 0 24px; max-width: 540px; color: rgba(255,255,255,.85); line-height: 1.65; }
+
+/* Keep the three concise banner benefits in one mobile row. */
+@media (max-width: 767px) {
+  .multiplier-brand-banner .mbb-stats-row { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+  .multiplier-brand-banner .mbb-stat-val { font-size: 16px; gap: 6px; flex-wrap: wrap; }
+}
+
+/* Left-align centered section headers on mobile only. */
+@media (max-width: 767px) {
+  .section-header-row.text-center.d-flex.flex-column.align-items-center {
+    text-align: left !important;
+    align-items: flex-start !important;
+  }
+  .section-header-row.text-center.d-flex.flex-column.align-items-center h2,
+  .section-header-row.text-center.d-flex.flex-column.align-items-center p { text-align: left !important; }
+  .section-header-row.text-center.d-flex.flex-column.align-items-center > p { margin-inline: 0 !important; }
+}
+
+@media (max-width: 767px) { .eyebrow { display: none !important; } }
+
+@media (max-width: 767px) { .sbc-chip-mini { display: none !important; } }
+
+@media (max-width: 767px) {
+  #leave-autopilot .leave-ui-stack-card.is-active {
+    margin-top: 24px !important;
+    margin-bottom: 24px !important;
+  }
+}
+
+/* Give the marketing process its own visual section on mobile. */
+@media (max-width: 767px) {
+  #leave-autopilot {
+    background: #f3f7fc;
+    border-top: 1px solid #dce6f2;
+    border-bottom: 1px solid #dce6f2;
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+  #leave-autopilot .leave-auto-header { gap: 16px; padding-bottom: 28px; border-bottom: 1px solid #dce6f2; }
+  #leave-autopilot .leave-sub-title { font-size: 18px; line-height: 1.4; margin: 0; color: var(--primary-color); }
+  #leave-autopilot .leave-intro-p { margin: 0; line-height: 1.7; }
+}
+
+@media (max-width: 767px) { .sbc-card.sbc-card-stepper.sbc-pos-top-left { display: none !important; } }
