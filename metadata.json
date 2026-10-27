@@ -1,0 +1,7 @@
+{
+  "name": "AdoTeam",
+  "description": "Enterprise-grade Human Resource Management System featuring Geo-fenced mobile attendance, 1-click automated payroll, multi-tier leave workflows, and deep workforce analytics.",
+  "capabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
