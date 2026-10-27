@@ -6400,3 +6400,11 @@ p:not(.h1):not(.h2):not(.h3):not(.h4):not(.h5):not(.h6) {
 }
 
 @media (max-width: 767px) { .sbc-card.sbc-card-stepper.sbc-pos-top-left { display: none !important; } }
+
+/* Full-width FAQ introduction on mobile, with a simpler contact prompt. */
+@media (max-width: 767px) {
+  #faq .faq-left { width: 100%; max-width: none; }
+  #faq .faq-left > .faq-marketing-toon { width: 100%; max-width: none; height: auto; }
+  #faq .faq-subtitle { width: 100%; max-width: none; }
+  #faq .faq-contact > h3 { display: none; }
+}
